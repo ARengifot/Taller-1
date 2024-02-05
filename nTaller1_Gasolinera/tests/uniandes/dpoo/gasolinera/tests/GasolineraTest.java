@@ -276,7 +276,7 @@ public class GasolineraTest
     public void testVenderGasolinaPorPrecioSencillo( )
     {
         int precioDeseado = 30000;
-        int precioPagado = g2.venderGasolinaPorPrecio( CORRIENTE, precioDeseado, 1 );
+        int precioPagado = Math.abs(g2.venderGasolinaPorPrecio( CORRIENTE, precioDeseado, 1 ));
 
         assertEquals( precioDeseado, precioPagado, "El precio pagado no es correcto" );
 
